@@ -6,7 +6,7 @@ import ThemeContextProvider from "./Context/ThemeContext.jsx";
 export default function App() {
   const router = createHashRouter([
     {
-      path: "",
+      path: "/",
       element: <RouterLayout />,
       children: [{ index: true, element: <Home /> }],
     },
