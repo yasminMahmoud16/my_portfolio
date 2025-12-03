@@ -62,7 +62,7 @@ const anchorItems = [
         {/* Navbar */}
         <nav
           className={`fixed w-full z-20 top-0 start-0 shadow transition-colors duration-300
-        ${theme === "light" ? "bg-neutral-primary" : "bg-gray-900"}
+        ${theme === "light" ? "bg-neutral-primary" : "#030712"}
       `}
         >
           {" "}
