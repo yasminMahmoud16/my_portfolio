@@ -1,26 +1,27 @@
 import About from "../Components/About/About.jsx";
+import Skills from "../Components/Skills/Skills.jsx";
 
 export default function Home() {
   return (
     <>
       <section
         id="part-1"
-        className="h-screen pt-20  "
+        className="min-h-screen pt-20 mt-6 "
       >
         <About/>
       </section>
 
       <section
         id="part-2"
-        className="h-screen mt-60 md:mt-0  "
+        className="min-h-screen mt-20 md:mt-0 flex flex-col items-center justify-center  "
         // style={{ height: "100vh", paddingTop: "100px", background: "#e1f7ff" }}
       >
-        Section 2
+        <Skills/>
       </section>
 
       <section
         id="part-3"
-        className="h-screen pt-20  "
+        className="min-h-screen mt-20 pt-20  "
         // style={{ height: "100vh", paddingTop: "100px", background: "#fff5d6" }}
       >
         Section 3

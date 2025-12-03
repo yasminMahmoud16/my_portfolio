@@ -7,7 +7,6 @@ import { ThemeContext } from "../../Context/contextCreation/Them.JS";
 import { motion } from "framer-motion";
 
 const { Title } = Typography;
-const { Link } = Anchor;
 
 export default function About() {
   const { theme } = useContext(ThemeContext);
@@ -17,16 +16,19 @@ export default function About() {
       style={{
         padding: "40px 20px",
         backgroundColor:
-          theme === "dark" ? "rgba(30,41,59,0.6)" : "oklch(97.8% 0.01 256.848)",
+          // theme === "dark" ? "rgba(30,41,59,0.6)" : "oklch(97.8% 0.01 256.848)",
+          theme === "dark" ? "#030712 " : "oklch(97.8% 0.01 256.848)",
+        boxShadow: theme === "dark" ? "0 2px 6px rgba(255, 255, 255, 0.2)" : "",
         backdropFilter: theme === "dark" ? "blur(10px)" : "",
         borderRadius: "20px",
+        margin:"0 10px 0px 10px"
       }}
       className="shadow-xl transition-all duration-300"
     >
       <Content>
         <Row gutter={[40, 40]} align="middle">
           <Col className=" flex items-center justify-center" flex={2}>
-            <div className=" border-4 border-gray-400 w-80 h-80 rounded-full flex items-center justify-center">
+            <div className=" text-gray-950 border-4 border-gray-400 w-80 h-80 rounded-full flex items-center justify-center">
               <motion.div
                 initial={{ opacity: 0, scale: 0.7 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -48,6 +50,7 @@ export default function About() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
+              className="text-center md:text-left"
             >
               <Title
                 level={2}
@@ -58,9 +61,9 @@ export default function About() {
               </Title>
 
               <motion.p
-                className="text-3xl font-bold mb-4"
+                className="text-3xl font-bold mb-4  "
                 style={{
-                  color: theme === "dark" ? "#EB8317" : "#0b6bcb",
+                  color: theme === "dark" ? "#721378 " : "#0b6bcb",
                 }}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -73,7 +76,7 @@ export default function About() {
                 className="text-lg leading-relaxed"
                 style={{
                   color: theme === "dark" ? "#cbd5e1" : "#475569",
-                  marginBottom:"10px"
+                  marginBottom: "10px",
                 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -88,26 +91,24 @@ export default function About() {
               </motion.p>
             </motion.div>
 
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ duration: 0.2 }}
-                    style={{
-                      backgroundColor: "transparent",
-                      color: theme === "dark" ? "#EB8317" : "#0b6bcb",
-                      padding: "6px 28px",
-                      borderRadius: "10px",
-                      fontSize: "18px",
-                      fontWeight: "600",
-                      marginTop: "10px",
-                      
-                      cursor: "pointer",
-                    }}
-                  >
-                    Contact Me
-                  </motion.button>
-                
-              
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              style={{
+                backgroundColor: "transparent",
+                color: theme === "dark" ? "#8a0194" : "#0b6bcb",
+                padding: "6px 28px",
+                borderRadius: "10px",
+                fontSize: "18px",
+                fontWeight: "600",
+                marginTop: "10px",
+
+                cursor: "pointer",
+              }}
+            >
+              Contact Me
+            </motion.button>
           </Col>
         </Row>
       </Content>
