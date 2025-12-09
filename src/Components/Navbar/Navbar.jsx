@@ -65,7 +65,6 @@ const anchorItems = [
         ${theme === "light" ? "bg-neutral-primary" : "#030712"}
       `}
         >
-          {" "}
           <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
             {/* Logo */}
             <a

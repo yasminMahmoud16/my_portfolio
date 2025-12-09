@@ -2,91 +2,116 @@
   "projects": [
     {
       "id": 1,
-      "name": "goldenstitchleathers",
+      "name": "golden Stitch Leathers",
       "link": "https://www.goldenstitchleathers.com/",
-      "image": "/src/assets/Images/goldenStitchBg.png",
-      "tech": [
-        "./src/assets/Images/react-svgrepo-com.svg",
-        "./src/assets/Images/typescript-icon-svgrepo-com.svg",
-        "./src/assets/Images/shadcn-logo_svgstack_com_31341764605308.svg",
-        "./src/assets/Images/tailwind-svgrepo-com.svg",
-        "./src/assets/Images/Azios.svg",
-        "./src/assets/Images/React-Query-Icon--Streamline-Svg-Logos.svg"
-      ]
+      "gitHubLink":"https://github.com/yasminMahmoud16/E-commerce-golden-stitch",
+      "image": "/Images/goldenStitchBg.png",
+     "tech": [
+  "React",
+  "TypeScript",
+  "Shadcn UI",
+  "Tailwind CSS",
+  "Azios",
+  "TenStack/React-Query",
+  "React-Hook-Form",
+  "Zod",
+  "jwt-decode",
+  "react-icons"
+]
     },
     {
       "id": 2,
-      "name": "landingSurvey",
+      "name": "landing Survey",
       "link": "https://surveyland.vercel.app/",
       "gitHubLink": "https://github.com/osamaashraf6/Landing-Survey",
-      "image": "/src/assets/Images/landingSurveybG.png",
+      "image": "/Images/landingSurveybG.png",
       "tech": [
-        "./src/assets/Images/react-svgrepo-com.svg",
-        "./src/assets/Images/shadcn-logo_svgstack_com_31341764605308.svg",
-        "./src/assets/Images/tailwind-svgrepo-com.svg",
-        "./src/assets/Images/Azios.svg"
+        "React",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "Azios",
+        "React-Hook-Form",
+        "yup",
+        "jwt-decode",
+        "react-icons"
       ]
     },
     {
       "id": 3,
-      "name": "BallanceFull",
+      "name": "Ballance Full",
       "gitHubLink": "https://github.com/MostafaMnesey/BalanceFull",
       "behanceLink": "https://www.behance.net/gallery/229060637/Landing-Page",
-      "image": "/src/assets/Images/balanceFullBg.png",
+      "image": "/Images/balanceFullBg.png",
       "tech": [
-        "./src/assets/Images/react-svgrepo-com.svg",
-        "./src/assets/Images/flowbite.svg",
-        "./src/assets/Images/tailwind-svgrepo-com.svg",
-        "./src/assets/Images/Azios.svg"
+        "React",
+        "Flowbite",
+        "Tailwind CSS",
+        "Azios",
+        "Formik",
+        "Yup",
+        "jwt-decode",
+        "react-icons"
+
       ]
     },
     {
       "id": 4,
-      "name": "E-commerceApp",
+      "name": "E-commerce App",
       "link": "https://yasminmahmoud16.github.io/E-commerceApp/#/login",
-      "image": "/src/assets/Images/E-commerceAppBg.png",
+      "gitHubLink": "https://github.com/yasminMahmoud16/E-commerceApp",
+      "behanceLink": "https://www.behance.net/gallery/219936697/E-commerce-APP",
+      "image": "/Images/E-commerceAppBg.png",
       "tech": [
-        "./src/assets/Images/react-svgrepo-com.svg",
-        "./src/assets/Images/flowbite.svg",
-        "./src/assets/Images/tailwind-svgrepo-com.svg",
-        "./src/assets/Images/Azios.svg",
-        "./src/assets/Images/React-Query-Icon--Streamline-Svg-Logos.svg"
+        "React",
+        "Flowbite",
+        "Tailwind CSS",
+        "Azios",
+        "TenStack/React-Query",
+        "Formik",
+        "Yup",
+        "jwt-decode",
+        "Fontawesome"
       ]
     },
     {
       "id": 5,
-      "name": "MealsApp",
+      "name": "Meals App",
       "link": "https://yasminmahmoud16.github.io/mealsApp/",
-      "image": "/src/assets/Images/mealsAppBg.png",
+      "gitHubLink": "https://github.com/yasminMahmoud16/mealsApp",
+      "image": "/Images/mealsAppBg.png",
       "tech": [
-        "./src/assets/Images/react-svgrepo-com.svg",
-        "./src/assets/Images/tailwind-svgrepo-com.svg",
-        "./src/assets/Images/Azios.svg",
-        "./src/assets/Images/React-Query-Icon--Streamline-Svg-Logos.svg"
+        "React",
+        "Tailwind CSS",
+        "Azios",
+        "TenStack/React-Query"
       ]
     },
     {
       "id": 6,
-      "name": "BookStoreApp",
+      "name": "E-Book App",
       "link": "https://site3ebookstore.netlify.app/",
-      "image": "/src/assets/Images/bookStoreBg.png",
+      "behanceLink": "https://www.behance.net/gallery/201031223/E-Book",
+      "image": "/Images/bookStoreBg.png",
       "tech": [
-        "./src/assets/Images/javascript-logo-svgrepo-com.svg",
-        "./src/assets/Images/bootstrap-svgrepo-com.svg",
-        "./src/assets/Images/css-3-svgrepo-com.svg",
-        "./src/assets/Images/html-5-svgrepo-com.svg"
+        "Javascript",
+        "Bootstrap",
+        "CSS-3",
+        "HTML-5",
+        "Responsive Design"
       ]
     },
     {
       "id": 7,
-      "name": "RestaurantApp",
+      "name": "Grill-Restaurant App",
       "link": "https://site6restaurant.netlify.app/",
-      "image": "/src/assets/Images/restaurantAppBg.png",
+      "behanceLink": "https://www.behance.net/gallery/200953331/Grill-Restaurant",
+      "image": "/Images/restaurantAppBg.png",
       "tech": [
-        "./src/assets/Images/javascript-logo-svgrepo-com.svg",
-        "./src/assets/Images/bootstrap-svgrepo-com.svg",
-        "./src/assets/Images/css-3-svgrepo-com.svg",
-        "./src/assets/Images/html-5-svgrepo-com.svg"
+         "Javascript",
+        "Bootstrap",
+        "CSS-3",
+        "HTML-5",
+        "Responsive Design"
       ]
     }
   ],
@@ -109,7 +134,7 @@
         "image": "/Images/shadcn-logo_svgstack_com_31341764605308.svg"
       },
         {
-        "id": 9,
+        "id": 90,
         "name": "Material UI",
         "image": "/Images/Material UI.svg"
       },
@@ -171,7 +196,7 @@
         "image": "/Images/Express.svg"
       },
       {
-        "id": 20,
+        "id": 200,
         "name": "MongoDB",
         "image": "/Images/MongoDB.svg"
       },
