@@ -4,7 +4,7 @@ import { ThemeContext } from "./contextCreation/Them.JS";
 
 
 export default function ThemeContextProvider({ children }) {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
     const themeToggle = () => {
         setTheme((prev) => (

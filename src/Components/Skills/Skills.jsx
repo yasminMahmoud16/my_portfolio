@@ -1,5 +1,3 @@
-import { Typography, Spin } from "antd";
-import { LoadingOutlined } from "@ant-design/icons";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/contextCreation/Them.JS";
 import useSkills from "../../Hooks/useSkills.jsx";
@@ -8,47 +6,24 @@ import {
   containerVariants,
   itemVariants,
 } from "../../Motion/SkillsAnimation.js";
+import SharedTitle from "../../Shared/SharedTitle.jsx";
+import SharedLoading from "../../Shared/SharedLoading.jsx";
 
-const { Title } = Typography;
 
 export default function Skills() {
   const { theme } = useContext(ThemeContext);
   const { data, isLoading } = useSkills();
 
-  const antIcon = (
-    <LoadingOutlined
-      style={{
-        fontSize: 48,
-        color: theme === "dark" ? "#f0c0ff" : "#0b6bcb",
-      }}
-      spin
-    />
-  );
+
 
   return (
     <>
-      <div>
-        <Title
-          style={{
-            fontFamily: "var(--font-kalam)",
-            color: theme === "dark" ? "#721378" : "#0b6bcb",
-          }}
-          level={1}
-          className="text-center capitalize"
-        >
-          Skills
-        </Title>
-      </div>
+      <SharedTitle title="Skills" />
+
 
       <div className="w-full">
         {isLoading ? (
-          <div className="flex items-center justify-center min-h-screen">
-            <Spin
-              indicator={antIcon}
-              tip="Loading..."
-              tipStyle={{ color: theme === "dark" ? "#f0c0ff" : "#0b6bcb" }}
-            />
-          </div>
+        <SharedLoading/>
         ) : (
           <motion.div
             className="relative grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8 overflow-hidden py-5"

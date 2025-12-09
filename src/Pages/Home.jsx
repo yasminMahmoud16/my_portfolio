@@ -1,4 +1,5 @@
 import About from "../Components/About/About.jsx";
+import Projects from "../Components/Projects/Projects.jsx";
 import Skills from "../Components/Skills/Skills.jsx";
 // import { useSymbols } from "../Hooks/useeSymbols.js";
 
@@ -37,10 +38,11 @@ export default function Home() {
 
       <section
         id="part-3"
-        className="min-h-screen mt-20 pt-20  "
+        className="min-h-screen mt-20 pt-20  overflow-hidden "
         // style={{ height: "100vh", paddingTop: "100px", background: "#fff5d6" }}
       >
-        Section 3
+        <Projects />
+
       </section>
     </>
   );

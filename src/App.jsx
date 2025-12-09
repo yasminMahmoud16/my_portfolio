@@ -20,6 +20,7 @@ export default function App() {
       <ThemeContextProvider>
 
       <RouterProvider router={router}/>
+
       </ThemeContextProvider>
     </QueryClientProvider>
   </>
