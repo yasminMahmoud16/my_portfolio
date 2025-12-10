@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "id": 11,
+      "name": "personal portfolio",
+      "link": "https://yasminmahmoud16.github.io/my_portfolio/",
+      "gitHubLink":"https://github.com/yasminMahmoud16/my_portfolio",
+      "image": "/Images/portfolio.png",
+     "tech": [
+  "React",
+  "Ant design",
+  "Tailwind CSS",
+  "context",
+  "TenStack/React-Query",
+  "Ant design icons"
+]
+    },
+    {
       "id": 1,
       "name": "golden Stitch Leathers",
       "link": "https://www.goldenstitchleathers.com/",
