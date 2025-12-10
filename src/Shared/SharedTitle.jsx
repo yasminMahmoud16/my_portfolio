@@ -10,9 +10,10 @@ export default function SharedTitle({ title, style = {} }) {
     <div>
       <Title
         level={1}
+        className="text-center md:text-left"
         style={{
           fontFamily: "var(--font-kalam)",
-          textAlign: "center",
+          // textAlign: "center",
           fontSize: "3rem",
           textTransform: "capitalize",
           paddingBottom: ".5rem",

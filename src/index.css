@@ -25,10 +25,38 @@
 
 body{
  font-family: "Poppins",sans-serif;
+  scrollbar-width: thin;
+    scrollbar-color:
+      var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
+body::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* لون المسار ثابت */
+  border-radius: 10px;
+}
 
+/* Dark mode thumb */
+body.dark::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #722ed1, #780650);
+  border-radius: 10px;
+}
 
+/* Light mode thumb */
+body.light::-webkit-scrollbar-thumb {
+  background: #0b6bcb;
+  border-radius: 10px;
+}
+
+/* Hover effect */
+body::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
 

@@ -18,7 +18,11 @@ export default function About() {
     <SharedLayout>
       <Row gutter={[40, 40]} align="middle">
         <Col className=" flex items-center justify-center" flex={2}>
-          <div className=" text-gray-950 border-4 border-gray-400 w-80 h-80 rounded-full flex items-center justify-center">
+          <div
+            className={` text-gray-950 border-4 ${
+              theme === "dark" ? "border-purple-950" : "border-gray-400"
+            }  w-80 h-80 rounded-full flex items-center justify-center`}
+          >
             <motion.div
               initial={{ opacity: 0, scale: 0.7 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -50,7 +54,10 @@ export default function About() {
               Yasmeen Mahmoud
             </Title>
 
-            <SharedTitle title={"FullStack Developer "} style={{ textAlign :"left"}} />
+            <SharedTitle
+              title={"FullStack Developer "}
+              // style={{ textAlign: "left" }}
+            />
             {/* <MotionTitle
               className="text-3xl font-bold mb-4  "
               style={{
@@ -76,7 +83,7 @@ export default function About() {
             </MotionTitle> */}
 
             <motion.p
-              className="text-lg leading-relaxed"
+              className="text-lg leading-relaxed text-justify px-3"
               style={{
                 color: theme === "dark" ? "#cbd5e1" : "#475569",
                 marginBottom: "10px",
@@ -94,7 +101,7 @@ export default function About() {
             </motion.p>
           </motion.div>
 
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.2 }}
@@ -111,7 +118,7 @@ export default function About() {
             }}
           >
             Contact Me
-          </motion.button>
+          </motion.button> */}
         </Col>
       </Row>
     </SharedLayout>

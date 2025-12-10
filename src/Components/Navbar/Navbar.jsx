@@ -4,11 +4,17 @@ import { SunOutlined,MoonOutlined } from "@ant-design/icons";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/contextCreation/Them.JS";
 // import { Switch } from "antd";
+import { motion } from "framer-motion";
+import { child, container } from "../../Motion/LogoAnimation.js";
 
 const { Text } = Typography;
 
 export default function Navbar() {
-    const { theme, themeToggle } = useContext(ThemeContext);
+  const { theme, themeToggle } = useContext(ThemeContext);
+    const name = "yasmeen";
+
+    const letters = name.split("");
+
 const anchorItems = [
   {
     key: "part-1",
@@ -53,9 +59,7 @@ const anchorItems = [
     className: "mr-4",
   },
 ];
-//   const onChange = (checked) => {
-//   console.log(`switch to ${checked}`);
-// };
+
 
     return (
       <>
@@ -65,21 +69,65 @@ const anchorItems = [
         ${theme === "light" ? "bg-neutral-primary" : "#030712"}
       `}
         >
-          <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+          <div className="max-w-7xl flex items-center justify-between mx-auto p-4">
             {/* Logo */}
-            <a
+            {/* <a
               href="/"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <Text
                 style={{
-                  color: theme === "light" ? "#111827" : "#ffffff",
-                  fontSize: "1rem",
+                  ...(theme === "dark"
+                    ? {
+                        background: "linear-gradient(90deg, #722ed1, #780650 )",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      }
+                    : { color: "#0b6bcb" }),
+                  // color: theme === "dark" ? "#111827" : "#ffffff",
+                  fontSize: "1.4rem",
+                  fontWeight: "700",
+                  textTransform: "uppercase",
+                  whiteSpace: "nowrap",
                 }}
-                className="self-center capitalize text-heading font-semibold whitespace-nowrap transition-colors duration-300"
               >
                 yasmeen
               </Text>
+            </a> */}
+
+            <a href="/" className="flex items-center">
+              <motion.div
+                style={{
+                  display: "flex",
+                  fontSize: "1.4rem",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  whiteSpace: "nowrap",
+                }}
+                variants={container}
+                initial="hidden"
+                animate="visible"
+              >
+                {letters.map((char, index) => (
+                  <motion.span
+                    key={index}
+                    variants={child}
+                    style={{
+                      marginRight: "0.18em",
+                      ...(theme === "dark"
+                        ? {
+                            background:
+                              "linear-gradient(90deg, #722ed1, #780650)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                          }
+                        : { color: "#0b6bcb" }),
+                    }}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.div>
             </a>
 
             <button
@@ -117,12 +165,9 @@ const anchorItems = [
             >
               <Anchor direction="horizontal" items={anchorItems} />
             </div>
-            <div
-              className="bg-amber-600  relative cursor-pointer "
-              onClick={themeToggle}
-            >
+            <div className=" relative cursor-pointer " onClick={themeToggle}>
               <div
-                className={`absolute -top-3 transition-all ${
+                className={`absolute -top-3 right-2 transition-all ${
                   theme === "light" ? "block" : "hidden"
                 }`}
               >
@@ -130,7 +175,7 @@ const anchorItems = [
               </div>
 
               <div
-                className={`absolute -top-3 transition-all ${
+                className={`absolute -top-3  right-2 transition-all ${
                   theme === "dark" ? "block text-white" : "hidden"
                 }`}
               >
