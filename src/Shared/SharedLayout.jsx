@@ -19,6 +19,7 @@ export default function SharedLayout({ children }) {
           backdropFilter: theme === "dark" ? "blur(10px)" : "",
           borderRadius: "20px",
           margin: "0 10px 0px 10px",
+          marginBottom:"1rem"
     
         }}
         className="shadow-xl transition-all duration-300"

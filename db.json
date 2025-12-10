@@ -244,5 +244,39 @@
         "image": "/Images/html-5-svgrepo-com.svg"
       }
     ]
+  },
+  "socialLinks": [
+  {
+    "icon": "github",
+    "type": "github",
+    "url": "https://github.com/yasminMahmoud16"
+  },
+  {
+    "icon": "linkedin",
+    "type": "linkedin",
+    "url": "https://www.linkedin.com/in/yasmeen-mahmoud-b5291422b/"
+  },
+  {
+    "icon": "behance",
+    "type": "behance",
+    "url": "https://www.behance.net/yasmeenmahmoud5"
+  },
+  {
+    "icon": "email",
+    "type": "email",
+    "url": "yasmeenmahmoud377@gmail.com"
+  },
+  {
+    "icon": "whatsApp",
+    "type": "whatsApp",
+    "url": "https://wa.me/+201033434141"
+  },
+  {
+    "icon": "phone",
+    "type": "phone",
+    "url": "01033434141"
   }
+]
+
+
 }
