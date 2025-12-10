@@ -15,7 +15,7 @@ export default function SharedTitle({ title, style = {} }) {
           textAlign: "center",
           fontSize: "3rem",
           textTransform: "capitalize",
-          paddingBottom: "1rem",
+          paddingBottom: ".5rem",
           ...(theme === "dark"
             ? {
                 background: "linear-gradient(90deg, #722ed1, #780650 )",
