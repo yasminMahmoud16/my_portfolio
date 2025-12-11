@@ -10,8 +10,6 @@ export const projects = [
             "React",
             "Ant design",
             "Tailwind CSS",
-            "context",
-            "TenStack/React-Query",
             "Ant design icons"
         ]
     },
@@ -181,6 +179,11 @@ export const tools = {
             "id": 8,
             "name": "React Query",
             "image": "src/assets/Images/React-Query-Icon--Streamline-Svg-Logos.svg"
+        },
+        {
+            "id": 80,
+            "name": "Redux",
+            "image": "src/assets/Images/Redux.svg"
         },
         {
             "id": 14,
