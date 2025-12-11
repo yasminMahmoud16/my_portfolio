@@ -12,8 +12,6 @@ This is **Yasmeen Mahmoud's personal portfolio**, showcasing projects, skills, a
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Projects](#projects)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Contact](#contact)
 
 ---
