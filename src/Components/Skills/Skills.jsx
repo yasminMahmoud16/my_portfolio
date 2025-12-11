@@ -62,7 +62,7 @@ export default function Skills() {
                           background: "rgba(255,255,255,0.1)",
                           backdropFilter: "blur(10px)",
                           boxShadow:
-                            "0 4px 30px rgba(114,19,120,0.5), 0 0 60px rgba(62,26,73,0.3)",
+                            "0 4px 30px rgba(114,19,120,0.3), 0 0 60px rgba(62,26,73,0.3)",
                         }
                       : {}
                   }
