@@ -38,7 +38,7 @@ export default function ProjectsCard() {
               {/* IMAGE SECTION */}
               <motion.div
                 whileHover={{ scale: 1.03 }}
-                className={`relative w-90 md:w-1/2 rounded-2xl overflow-hidden group  ${
+                className={`relative w-80 md:w-1/2 rounded-2xl overflow-hidden group  ${
                   theme === "dark" ? "border border-gray-900" : ""
                 }`}
               >
