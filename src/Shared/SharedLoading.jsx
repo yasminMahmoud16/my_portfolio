@@ -19,8 +19,7 @@ export default function SharedLoading() {
         <div className=" flex items-center justify-center min-h-screen w-full ">
           <Spin
             indicator={antIcon}
-            tip="Loading..."
-            tipStyle={{ color: theme === "dark" ? "#f0c0ff" : "#0b6bcb" }}
+            tipstyle={{ color: theme === "dark" ? "#f0c0ff" : "#0b6bcb" }}
           />
         </div>
       </>

@@ -1,6 +1,5 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../Context/contextCreation/Them.JS";
-import useSkills from "../../Hooks/useSkills.jsx";
 import { motion } from "framer-motion";
 import {
   containerVariants,
@@ -8,13 +7,22 @@ import {
 } from "../../Motion/SkillsAnimation.js";
 import SharedTitle from "../../Shared/SharedTitle.jsx";
 import SharedLoading from "../../Shared/SharedLoading.jsx";
+import { tools } from "../../Utils/Data.js";
 
 
 export default function Skills() {
   const { theme } = useContext(ThemeContext);
-  const { data, isLoading } = useSkills();
+  const [isLoading,setIsLoading]= useState(false)
 
 
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
 
   return (
     <>
@@ -34,7 +42,7 @@ export default function Skills() {
             viewport={{ once: true, margin: "-100px" }}
           >
             {/* libraries */}
-            {data?.libraries?.map((item, index) => (
+            {tools?.libraries?.map((item, index) => (
               <motion.div
                 key={item.id}
                 custom={index}
@@ -60,7 +68,7 @@ export default function Skills() {
                   }
                 >
                   <img
-                    src={`http://localhost:5000${item.image}`}
+                    src={item.image}
                     alt={item.name}
                     className="w-16 h-16 object-contain mb-2 rounded-full"
                   />
@@ -76,10 +84,10 @@ export default function Skills() {
             ))}
 
             {/* languages */}
-            {data?.languages?.map((item, index) => (
+            {tools?.languages?.map((item, index) => (
               <motion.div
                 key={item.id}
-                custom={index + (data?.libraries?.length || 0)}
+                custom={index + (tools?.libraries?.length || 0)}
                 variants={itemVariants}
                 initial="hidden"
                 animate="visible"
@@ -102,7 +110,7 @@ export default function Skills() {
                   }
                 >
                   <img
-                    src={`http://localhost:5000${item.image}`}
+                    src={item.image}
                     alt={item.name}
                     className="w-16 h-16 object-contain mb-2 rounded-full"
                   />

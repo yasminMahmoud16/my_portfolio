@@ -1,5 +1,4 @@
 
-import useProjects from "../../../Hooks/useProjects.jsx";
 import {
     BehanceOutlined,
     GithubOutlined,
@@ -10,18 +9,18 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../../../Context/contextCreation/Them.JS";
 import MotionBtn from "../../../Motion/MotionBtn.jsx";
+import { projects } from "../../../Utils/Data.js";
 
 
 export default function ProjectsCard() {
     const { theme } = useContext(ThemeContext);
 
-    const { data } = useProjects();
 
 
 
     return (
       <>
-        {data?.map((project, index) => {
+        {projects?.map((project, index) => {
           const isEven = index % 2 === 0;
           return (
             <motion.div
@@ -32,7 +31,7 @@ export default function ProjectsCard() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{
-                duration: 0.9,
+                duration: 0.10,
                 ease: [0.32, 0.72, 0, 1],
               }}
             >
@@ -45,7 +44,7 @@ export default function ProjectsCard() {
               >
                 {/* IMAGE */}
                 <img
-                  src={`http://localhost:5000${project.image}`}
+                  src={project.image}
                   alt={project.name}
                   className="rounded-2xl shadow-lg w-full h-[300px] object-cover"
                 />
@@ -58,24 +57,34 @@ export default function ProjectsCard() {
                   className="absolute inset-0 bg-black/50 flex items-center justify-center rounded-2xl
                opacity-0 group-hover:opacity-100 backdrop-blur-sm cursor-pointer"
                 >
-                  <motion.a
-                    href={project.link}
-                    target="_blank"
-                    initial={{ opacity: 0, y: 12, color: "#ffffff" }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, ease: "easeOut" }}
-                    whileHover={{
-                      scale: 1.08,
-                      x: 4,
-                      // color: "#3B82F6",
-                      color: theme === "dark" ? "#962c9d" : "#3B82F6",
-                      textShadow: "0 2px 8px rgba(255,255,255,0.4)",
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                    className="font-medium text-lg flex items-center gap-2"
-                  >
-                    View Live Project <LinkOutlined className="text-xl" />
-                  </motion.a>
+                  {project.link ? (
+                    <motion.a
+                      href={project.link}
+                      target="_blank"
+                      initial={{ opacity: 0, y: 12, color: "#ffffff" }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, ease: "easeOut" }}
+                      whileHover={{
+                        scale: 1.08,
+                        x: 4,
+                        color: theme === "dark" ? "#962c9d" : "#3B82F6",
+                        textShadow: "0 2px 8px rgba(255,255,255,0.4)",
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                      className="font-medium text-lg flex items-center gap-2"
+                    >
+                      View Live Project <LinkOutlined className="text-xl" />
+                    </motion.a>
+                  ) : (
+                    <motion.span
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4 }}
+                      className="text-gray-400 italic text-lg"
+                    >
+                      No live link
+                    </motion.span>
+                  )}
                 </motion.div>
               </motion.div>
 
@@ -84,14 +93,12 @@ export default function ProjectsCard() {
                 <h2
                   className={`text-3xl font-bold capitalize ${
                     theme === "dark"
-                      ? "bg-gradient-to-r from-purple-700 to-pink-700 bg-clip-text text-transparent"
+                      ? "bg-linear-to-r from-purple-700 to-pink-700 bg-clip-text text-transparent"
                       : "text-blue-900"
                   }`}
                 >
                   {project.name}
                 </h2>
-
-
 
                 {/* TECH */}
                 <div className="flex flex-wrap gap-2 mt-5">
@@ -111,13 +118,10 @@ export default function ProjectsCard() {
 
                 {/* ICON BUTTONS */}
                 <div className="flex  items-center gap-4 mt-6 ">
-                
-
                   {project.link && (
                     <MotionBtn
                       btnHref={project.link}
                       btnName={"Demo"}
-                    
                       btnIcon={
                         <LinkOutlined
                           style={{
@@ -127,13 +131,11 @@ export default function ProjectsCard() {
                         />
                       }
                     />
-                    
                   )}
                   {project.gitHubLink && (
                     <MotionBtn
                       btnHref={project.gitHubLink}
                       btnName={"Repository"}
-                    
                       btnIcon={
                         <GithubOutlined
                           style={{
@@ -143,7 +145,6 @@ export default function ProjectsCard() {
                         />
                       }
                     />
-                    
                   )}
                   {project.behanceLink && (
                     <MotionBtn
@@ -159,7 +160,6 @@ export default function ProjectsCard() {
                         />
                       }
                     />
-                  
                   )}
                 </div>
               </div>

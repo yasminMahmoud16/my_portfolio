@@ -1,13 +1,13 @@
-import { Layout, Row, Col } from "antd";
-const { Content } = Layout;
-import { Typography } from "antd";
+
 import img from "../../assets/Images/yasmeen C 1.svg";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/contextCreation/Them.JS";
 import { motion } from "framer-motion";
 import SharedLayout from "../../Shared/SharedLayout.jsx";
 import SharedTitle from "../../Shared/SharedTitle.jsx";
-
+import { Layout, Row, Col } from "antd";
+import { Typography } from "antd";
+const { Content } = Layout;
 const { Title } = Typography;
 
 // const MotionTitle = motion(Title);
@@ -54,33 +54,7 @@ export default function About() {
               Yasmeen Mahmoud
             </Title>
 
-            <SharedTitle
-              title={"FullStack Developer "}
-              // style={{ textAlign: "left" }}
-            />
-            {/* <MotionTitle
-              className="text-3xl font-bold mb-4  "
-              style={{
-                fontFamily: "var(--font-kalam)",
-                fontSize: "2.2rem",
-                textTransform: "capitalize",
-                ...(theme === "dark"
-                  ? {
-                      background: "linear-gradient(90deg, #722ed1, #780650 )",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }
-                  : { color: "#0b6bcb" }),
-              }}
-              // style={{
-              //   color: theme === "dark" ? "#721378 " : "#0b6bcb",
-              // }}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.7 }}
-            >
-              Frontend Developer
-            </MotionTitle> */}
+            <SharedTitle title={"FullStack Developer "} />
 
             <motion.p
               className="text-lg leading-relaxed text-justify px-3"
@@ -92,33 +66,14 @@ export default function About() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.45, duration: 0.7 }}
             >
-              I’m a frontend developer focused on building responsive and
-              user-friendly web applications using React, TypeScript,
-              TailwindCSS, and modern tools. I enjoy turning designs into clean,
-              functional interfaces and creating smooth user experiences. Always
-              learning, improving, and passionate about working on projects that
-              challenge my skills and creativity.
+              I’m a Full-Stack Developer specializing in building responsive,
+              high-quality web applications using React, Node.js, TypeScript,
+              and modern tools. I’m passionate about creating clean, functional
+              interfaces on the frontend and efficient, scalable APIs on the
+              backend. Always learning, improving, and excited to work on
+              projects that challenge my skills and creativity.
             </motion.p>
           </motion.div>
-
-          {/* <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            style={{
-              backgroundColor: "transparent",
-              color: theme === "dark" ? "#8a0194" : "#0b6bcb",
-              padding: "6px 28px",
-              borderRadius: "10px",
-              fontSize: "18px",
-              fontWeight: "600",
-              marginTop: "10px",
-
-              cursor: "pointer",
-            }}
-          >
-            Contact Me
-          </motion.button> */}
         </Col>
       </Row>
     </SharedLayout>
