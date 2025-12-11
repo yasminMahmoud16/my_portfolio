@@ -1,11 +1,52 @@
 
+import portfolio from "../assets/Images/portfolio.png"
+import goldenStitchBg from "../assets/Images/goldenStitchBg.png"
+import landingSurveybG from "../assets/Images/landingSurveybG.png"
+import balanceFullBg from "../assets/Images/balanceFullBg.png"
+import ECommerceAppBg from "../assets/Images/E-commerceAppBg.png"
+import mealsAppBg from "../assets/Images/mealsAppBg.png"
+import bookStoreBg from "../assets/Images/bookStoreBg.png"
+import restaurantAppBg from "../assets/Images/restaurantAppBg.png"
+import react from "../assets/Images/react-svgrepo-com.svg"
+import tailwind from "../assets/Images/tailwind-svgrepo-com.svg"
+import shadCn from "../assets/Images/shadcn-logo_svgstack_com_31341764605308.svg"
+import MaterialUI from "../assets/Images/Material UI.svg"
+import AntDesign from "../assets/Images/Ant Design.svg"
+import flowbite from "../assets/Images/flowbite.svg"
+import framerMotion from "../assets/Images/framer-motion.png"
+import azios from "../assets/Images/Azios.svg"
+import reactQuery from "../assets/Images/React-Query-Icon--Streamline-Svg-Logos.svg"
+import redux from "../assets/Images/Redux.svg"
+import reactHookForm from "../assets/Images/react-hook-form-logo-only.svg"
+import formik from "../assets/Images/Formik--Streamline-Simple-Icons.svg"
+import zod from "../assets/Images/Zod--Streamline-Svg-Logos.svg"
+import joi from "../assets/Images/joiTransparent.c5fc726.png"
+import nodeJs from "../assets/Images/Node.js.svg"
+import express from "../assets/Images/Express.svg"
+import mongoDb from "../assets/Images/MongoDB.svg"
+import mongoose from "../assets/Images/Mongoose.js.svg"
+import aws from "../assets/Images/AWS.svg"
+import figma from "../assets/Images/Figma.svg"
+import git from "../assets/Images/Git.svg"
+import github from "../assets/Images/GitHub.svg"
+import bootstrap from "../assets/Images/bootstrap-svgrepo-com.svg"
+import typescript from "../assets/Images/typescript-icon-svgrepo-com.svg"
+import javascript from "../assets/Images/javascript-logo-svgrepo-com.svg"
+import css from "../assets/Images/css-3-svgrepo-com.svg"
+import html from "../assets/Images/html-5-svgrepo-com.svg"
+
+
+
+
+
+
 export const projects = [
     {
         "id": 11,
         "name": "personal portfolio",
         "link": "https://yasminmahmoud16.github.io/my_portfolio/",
         "gitHubLink": "https://github.com/yasminMahmoud16/my_portfolio",
-        "image": "src/assets/Images/portfolio.png",
+        "image": portfolio,
         "tech": [
             "React",
             "Ant design",
@@ -18,7 +59,7 @@ export const projects = [
         "name": "golden Stitch Leathers",
         "link": "https://www.goldenstitchleathers.com/",
         "gitHubLink": "https://github.com/yasminMahmoud16/E-commerce-golden-stitch",
-        "image": "src/assets/Images/goldenStitchBg.png",
+        "image": goldenStitchBg,
         "tech": [
             "React",
             "TypeScript",
@@ -37,7 +78,7 @@ export const projects = [
         "name": "landing Survey",
         "link": "https://surveyland.vercel.app/",
         "gitHubLink": "https://github.com/osamaashraf6/Landing-Survey",
-        "image": "src/assets/Images/landingSurveybG.png",
+        "image": landingSurveybG,
         "tech": [
             "React",
             "Shadcn UI",
@@ -54,7 +95,7 @@ export const projects = [
         "name": "Ballance Full",
         "gitHubLink": "https://github.com/MostafaMnesey/BalanceFull",
         "behanceLink": "https://www.behance.net/gallery/229060637/Landing-Page",
-        "image": "src/assets/Images/balanceFullBg.png",
+        "image": balanceFullBg,
         "tech": [
             "React",
             "Flowbite",
@@ -73,7 +114,7 @@ export const projects = [
         "link": "https://yasminmahmoud16.github.io/E-commerceApp/#/login",
         "gitHubLink": "https://github.com/yasminMahmoud16/E-commerceApp",
         "behanceLink": "https://www.behance.net/gallery/219936697/E-commerce-APP",
-        "image": "src/assets/Images/E-commerceAppBg.png",
+        "image": ECommerceAppBg,
         "tech": [
             "React",
             "Flowbite",
@@ -91,7 +132,7 @@ export const projects = [
         "name": "Meals App",
         "link": "https://yasminmahmoud16.github.io/mealsApp/",
         "gitHubLink": "https://github.com/yasminMahmoud16/mealsApp",
-        "image": "src/assets/Images/mealsAppBg.png",
+        "image": mealsAppBg,
         "tech": [
             "React",
             "Tailwind CSS",
@@ -104,7 +145,7 @@ export const projects = [
         "name": "E-Book App",
         "link": "https://site3ebookstore.netlify.app/",
         "behanceLink": "https://www.behance.net/gallery/201031223/E-Book",
-        "image": "src/assets/Images/bookStoreBg.png",
+        "image": bookStoreBg,
         "tech": [
             "Javascript",
             "Bootstrap",
@@ -118,7 +159,7 @@ export const projects = [
         "name": "Grill-Restaurant App",
         "link": "https://site6restaurant.netlify.app/",
         "behanceLink": "https://www.behance.net/gallery/200953331/Grill-Restaurant",
-        "image": "src/assets/Images/restaurantAppBg.png",
+        "image": restaurantAppBg,
         "tech": [
             "Javascript",
             "Bootstrap",
@@ -136,132 +177,142 @@ export const tools = {
         {
             "id": 5,
             "name": "ReactJs",
-            "image": "src/assets/Images/react-svgrepo-com.svg"
+            "image": react
         },
         {
             "id": 6,
             "name": "TailwindCss",
-            "image": "src/assets/Images/tailwind-svgrepo-com.svg"
+            "image": tailwind
         },
         {
             "id": 9,
             "name": "shadcn",
-            "image": "src/assets/Images/shadcn-logo_svgstack_com_31341764605308.svg"
+            "image": shadCn
         },
         {
             "id": 90,
             "name": "Material UI",
-            "image": "src/assets/Images/Material UI.svg"
+            "image": MaterialUI
         },
         {
             "id": 11,
             "name": "Ant Design",
-            "image": "src/assets/Images/Ant Design.svg"
+            "image": AntDesign
         },
 
         {
             "id": 10,
             "name": "flowbite",
-            "image": "src/assets/Images/flowbite.svg"
+            "image": flowbite
         },
         {
             "id": 20,
             "name": "framer-motion",
-            "image": "src/assets/Images/framer-motion.png"
+            "image": framerMotion
         },
 
         {
             "id": 7,
             "name": "Axios",
-            "image": "src/assets/Images/Azios.svg"
+            "image": azios
         },
         {
             "id": 8,
             "name": "React Query",
-            "image": "src/assets/Images/React-Query-Icon--Streamline-Svg-Logos.svg"
+            "image": reactQuery
         },
         {
             "id": 80,
             "name": "Redux",
-            "image": "src/assets/Images/Redux.svg"
+            "image": redux
         },
         {
             "id": 14,
             "name": "React Hook Form",
-            "image": "src/assets/Images/react-hook-form-logo-only.svg"
+            "image": reactHookForm
         },
         {
             "id": 15,
             "name": "Formik",
-            "image": "src/assets/Images/Formik--Streamline-Simple-Icons.svg"
+            "image": formik
         },
         {
             "id": 16,
             "name": "Zod",
-            "image": "src/assets/Images/Zod--Streamline-Svg-Logos.svg"
+            "image": zod
         },
         {
             "id": 17,
             "name": "Joi",
-            "image": "src/assets/Images/joiTransparent.c5fc726.png"
+            "image": joi
         },
         {
             "id": 18,
             "name": "NodeJs",
-            "image": "src/assets/Images/Node.js.svg"
+            "image": nodeJs
         },
         {
             "id": 19,
             "name": "ExpressJs",
-            "image": "src/assets/Images/Express.svg"
+            "image": express
         },
         {
             "id": 200,
             "name": "MongoDB",
-            "image": "src/assets/Images/MongoDB.svg"
+            "image": mongoDb
         },
         {
             "id": 28,
             "name": "Mongoose.js",
-            "image": "src/assets/Images/Mongoose.js.svg"
+            "image": mongoose
         },
         {
             "id": 29,
             "name": "AWS",
-            "image": "src/assets/Images/AWS.svg"
+            "image": aws
         },
         {
             "id": 21,
             "name": "Figma",
-            "image": "src/assets/Images/Figma.svg"
+            "image": figma
+        },
+        {
+            "id": 210,
+            "name": "Git",
+            "image": git
+        },
+        {
+            "id": 211,
+            "name": "GitHub",
+            "image": github
         },
 
         {
             "id": 12,
             "name": "Bootstrap",
-            "image": "src/assets/Images/bootstrap-svgrepo-com.svg"
+            "image": bootstrap
         }
     ],
         "languages": [
             {
                 "id": 1,
                 "name": "TypeScript",
-                "image": "src/assets/Images/typescript-icon-svgrepo-com.svg"
+                "image": typescript
             },
             {
                 "id": 2,
                 "name": "JavaScript",
-                "image": "src/assets/Images/javascript-logo-svgrepo-com.svg"
+                "image": javascript
             },
             {
                 "id": 3,
                 "name": "Css3",
-                "image": "src/assets/Images/css-3-svgrepo-com.svg"
+                "image": css
             },
             {
                 "id": 4,
                 "name": "Html5",
-                "image": "src/assets/Images/html-5-svgrepo-com.svg"
+                "image": html
             }
         ]
 };
