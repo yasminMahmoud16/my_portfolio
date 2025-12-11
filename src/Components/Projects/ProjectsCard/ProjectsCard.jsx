@@ -31,7 +31,7 @@ export default function ProjectsCard() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{
-                duration: 0.10,
+                duration: 0.1,
                 ease: [0.32, 0.72, 0, 1],
               }}
             >
@@ -46,7 +46,7 @@ export default function ProjectsCard() {
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="rounded-2xl shadow-lg w-full h-[300px] object-cover"
+                  className="rounded-2xl shadow-lg w-full h-[300px] object-contain"
                 />
 
                 {/* OVERLAY LAYER */}
