@@ -15,7 +15,7 @@ export default function Home() {
 
       <section
         id="part-2"
-        className="relative min-h-screen mt-20 md:mt-0 flex flex-col items-center justify-center overflow-hidden"
+        className="relative min-h-screen px-4 mt-20 md:mt-0 flex flex-col items-center justify-center overflow-hidden"
       >
         <Skills />
 

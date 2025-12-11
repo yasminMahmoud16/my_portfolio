@@ -117,15 +117,16 @@ export default function ProjectsCard() {
                 </div>
 
                 {/* ICON BUTTONS */}
-                <div className="flex  items-center gap-4 mt-6 ">
+                <div className="flex md:flex-nowrap items-center gap-4 mt-6 ">
                   {project.link && (
                     <MotionBtn
                       btnHref={project.link}
                       btnName={"Demo"}
                       btnIcon={
                         <LinkOutlined
+                          className="md:text-xl!"
                           style={{
-                            fontSize: "24px",
+                            fontSize: "15px",
                             color: theme === "dark" ? "#722ed1" : "#1C398E",
                           }}
                         />
@@ -138,8 +139,9 @@ export default function ProjectsCard() {
                       btnName={"Repository"}
                       btnIcon={
                         <GithubOutlined
+                          className="md:text-xl!"
                           style={{
-                            fontSize: "24px",
+                            fontSize: "15px",
                             color: theme === "dark" ? "#722ed1" : "#1C398E",
                           }}
                         />
@@ -152,9 +154,9 @@ export default function ProjectsCard() {
                       btnName={"Behance"}
                       btnIcon={
                         <BehanceOutlined
-                          className=""
+                          className="md:text-xl!"
                           style={{
-                            fontSize: "24px",
+                            fontSize: "20px",
                             color: theme === "dark" ? "#722ed1" : "#1C398E",
                           }}
                         />

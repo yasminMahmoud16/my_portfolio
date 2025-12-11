@@ -9,7 +9,7 @@ export default function MotionBtn({ btnName, btnHref, btnIcon, style = {} }) {
       style={{
         padding: ".4rem 2rem",
         borderRadius: ".4rem",
-        width: "15rem",
+        width: "10rem",
 
         border: theme === "dark" ? "2px solid #770E6A" : "transparent",
         background: theme === "dark" ? "transparent" : "#F3F4F6",
@@ -38,10 +38,10 @@ export default function MotionBtn({ btnName, btnHref, btnIcon, style = {} }) {
         ease: "easeInOut",
       }}
     >
-      {btnIcon}
       <a
-              href={btnHref}
-              target="_blank"
+        href={btnHref}
+        target="_blank"
+        className="text-xs md:text-lg flex gap-2 items-center "
         style={{
           background:
             theme === "dark"
@@ -52,6 +52,8 @@ export default function MotionBtn({ btnName, btnHref, btnIcon, style = {} }) {
           WebkitTextFillColor: theme === "dark" ? "transparent" : "inherit",
         }}
       >
+        {btnIcon}
+
         {btnName}
       </a>
     </motion.button>
