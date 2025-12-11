@@ -57,7 +57,7 @@ export default function About() {
             <SharedTitle title={"FullStack Developer "} />
 
             <motion.p
-              className="text-lg leading-relaxed text-justify px-3"
+              className="text-lg leading-relaxed  px-3"
               style={{
                 color: theme === "dark" ? "#cbd5e1" : "#475569",
                 marginBottom: "10px",
