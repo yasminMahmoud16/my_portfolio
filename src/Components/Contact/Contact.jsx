@@ -1,5 +1,4 @@
 import SharedTitle from "../../Shared/SharedTitle.jsx";
-import useSocialLinks from "../../Hooks/useSocialLinks.jsx";
 import { useContext } from "react";
 import { ThemeContext } from "../../Context/contextCreation/Them.JS";
 import {
@@ -12,14 +11,12 @@ import {
   PhoneOutlined,
 } from "@ant-design/icons";
 import { motion } from "framer-motion";
+import { socialLinks } from "../../Utils/Data.js";
 
 export default function Contact() {
     const { theme } = useContext(ThemeContext);
   
-  const { data, isLoading, error } = useSocialLinks();
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error fetching data</p>;
 const icons = {
   github: <GithubFilled />,
   linkedin: <LinkedinOutlined />,
@@ -30,8 +27,8 @@ const icons = {
 };
   return (
     <>
-      <div className="mb-6">
-        <SharedTitle title={"Contact"} />
+      <div className="mb-6 flex flex-col items-center justify-center">
+        <SharedTitle title={"Contact"}  />
         <p
           className={`text-center ${
             theme === "dark" ? "text-gray-400" : "text-gray-400"
@@ -42,7 +39,7 @@ const icons = {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full place-items-center px-20">
-        {data?.map((link, index) => (
+        {socialLinks?.map((link, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -50,8 +47,11 @@ const icons = {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.05 }}
             style={{
-              background: theme ==="dark"? "linear-gradient(90deg, #722ed1, #780650)":"",
-              color: theme ==="dark"? "#ffff":"#1c398e",
+              background:
+                theme === "dark"
+                  ? "linear-gradient(90deg, #722ed1, #780650)"
+                  : "",
+              color: theme === "dark" ? "#ffff" : "#1c398e",
               boxShadow:
                 theme === "dark"
                   ? "2px 2px 15px rgba(255, 255, 255, 0.2)"
@@ -60,9 +60,8 @@ const icons = {
               width: "100%",
               borderRadius: ".3rem",
               padding: "1rem",
-              cursor:"pointer"
+              cursor: "pointer",
             }}
-
           >
             {/* Overlay glow effect */}
             <motion.div
@@ -95,11 +94,7 @@ const icons = {
             </a>
           </motion.div>
         ))}
-
-
       </div>
-
-
     </>
   );
 }

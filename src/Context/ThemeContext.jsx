@@ -12,15 +12,7 @@ export default function ThemeContextProvider({ children }) {
         ))
     }
 
-    // useEffect(() => {
-    //     if (theme === "dark") {
-    //         document.body.classList.add("bg-gray-900", "text-white");
-    //         document.body.classList.remove("bg-white", "text-gray-900");
-    //     } else {
-    //         document.body.classList.add("bg-white", "text-gray-900");
-    //         document.body.classList.remove("bg-gray-900", "text-white");
-    //     }
-    // }, [theme]);
+
     useEffect(() => {
       if (theme === "dark") {
         document.documentElement.classList.add("dark");

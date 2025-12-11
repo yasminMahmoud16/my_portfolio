@@ -1,13 +1,13 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @custom-variant dark (&:where(.dark, .dark *));
 :root {
-  font-family:  "Poppins", sans-serif system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family:  "Poppins", sans-serif system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
-  --font-kalam: "Kalam", cursive;
+  --font-kalam: "Helvetica", Poppins;
 
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
@@ -31,32 +31,43 @@ body{
 }
 
 
-/* Chrome, Edge, Safari */
-body::-webkit-scrollbar {
+
+
+/* ===== Scrollbar Light Mode ===== */
+/* ===== default (light/browser default) ===== */
+/* خليها بسيطة علشان اللايت يفضل الافتراضي */
+::-webkit-scrollbar {
   width: 8px;
-  height: 8px;
 }
 
-body::-webkit-scrollbar-track {
-  background: #f0f0f0;
-  /* لون المسار ثابت */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
-/* Dark mode thumb */
-body.dark::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #722ed1, #780650);
+/* ===== dark ===== */
+html.dark::-webkit-scrollbar {
+  width: 8px;
+}
+
+html.dark::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+html.dark::-webkit-scrollbar-thumb {
+  background: #3b82f6;
   border-radius: 10px;
 }
 
-/* Light mode thumb */
-body.light::-webkit-scrollbar-thumb {
-  background: #0b6bcb;
-  border-radius: 10px;
+html.dark::-webkit-scrollbar-thumb:hover {
+  background: #60a5fa;
 }
 
-/* Hover effect */
-body::-webkit-scrollbar-thumb:hover {
-  opacity: 0.8;
+html.dark {
+  scrollbar-width: thin;
+  scrollbar-color: #962c9d #0f0f0f;
 }
-
