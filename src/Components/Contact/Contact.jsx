@@ -28,7 +28,7 @@ const icons = {
   return (
     <>
       <div className="mb-6 flex flex-col items-center justify-center">
-        <SharedTitle title={"Contact"}  />
+        <SharedTitle title={"Contact"} />
         <p
           className={`text-center ${
             theme === "dark" ? "text-gray-400" : "text-gray-400"
@@ -79,7 +79,7 @@ const icons = {
                   : link.url || "#"
               }
               target={link.type !== "email" ? "_blank" : undefined}
-              className="flex items-center gap-3 text-lg font-semibold relative z-10 capitalize"
+              className="flex items-center gap-3 text-[10px] md:text-sm font-semibold relative z-10 capitalize"
             >
               {icons[link.icon]}
               {link.type === "phone" ? link.url : link.type}
@@ -91,6 +91,8 @@ const icons = {
               >
                 <ArrowUpOutlined />
               </motion.span>
+
+              
             </a>
           </motion.div>
         ))}
