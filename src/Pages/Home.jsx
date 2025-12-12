@@ -9,13 +9,13 @@ export default function Home() {
     const { theme } = useContext(ThemeContext);
   return (
     <>
-      <section id="part-1" className="min-h-screen pt-20 mt-6 ">
+      <section id="part-1" className=" mt-15 pb-8 ">
         <About />
       </section>
 
       <section
         id="part-2"
-        className="relative min-h-screen px-4 mt-20 md:mt-0 flex flex-col items-center justify-center overflow-hidden"
+        className="relative min-h-screen px-4 mt-20 md:mt-5 flex flex-col items-center justify-center overflow-hidden"
       >
         <Skills />
 
@@ -23,14 +23,14 @@ export default function Home() {
 
       <section
         id="part-3"
-        className="min-h-screen mt-20 pt-20  overflow-hidden "
+        className="min-h-screen mt-20   overflow-hidden "
       >
         <Projects />
       </section>
 
       <footer
         id="part-3"
-        className="min-h-screen mt-20 pt-20  overflow-hidden flex flex-col justify-center items-center gap-10"
+        className=" mt-20 md:mt-10   overflow-hidden flex flex-col justify-center items-center gap-10"
       >
         <Contact />
         <div className="mb-6">

@@ -32,7 +32,7 @@ const icons = {
         <p
           className={`text-center ${
             theme === "dark" ? "text-gray-400" : "text-gray-400"
-          } capitalize font-semibold`}
+          } capitalize font-semibold text-xs md:text-lg px-2`}
         >
           Let’s build something together! Reach out or follow me on social media
         </p>

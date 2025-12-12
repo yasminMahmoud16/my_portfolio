@@ -16,19 +16,24 @@ export default function About() {
 
   return (
     <SharedLayout>
-      <Row gutter={[40, 40]} align="middle">
-        <Col className=" flex items-center justify-center" flex={2}>
+      <Row gutter={[40, 40]} align="middle" className="">
+        <Col
+          xs={24}
+          md={10}
+          className=" flex! items-center justify-center "
+          flex={2}
+        >
           <div
             className={` text-gray-950 border-4 ${
               theme === "dark" ? "border-purple-950" : "border-gray-400"
-            }  w-80 h-80 rounded-full flex items-center justify-center`}
+            }  w-80 h-80 md:w-70 md:h-70 xl:w-80 xl:h-80 rounded-full flex items-center justify-center`}
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.7 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               whileHover={{ scale: 1.05 }}
-              className="w-72 h-72 rounded-full overflow-hidden shadow-2xl "
+              className="w-72 h-72 md:w-60 md:h-60 rounded-full overflow-hidden shadow-2xl "
             >
               <img
                 src={img}
