@@ -91,7 +91,7 @@ export default function ProjectsCard() {
               {/* TEXT SECTION */}
               <div className="w-90 md:w-1/2 rounded-2xl p-6 ">
                 <h2
-                  className={`text-3xl font-bold capitalize ${
+                  className={`text-3xl font-bold capitalize p-2 ${
                     theme === "dark"
                       ? "bg-linear-to-r from-purple-700 to-pink-700 bg-clip-text text-transparent"
                       : "text-blue-900"

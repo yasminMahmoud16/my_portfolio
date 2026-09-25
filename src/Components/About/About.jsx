@@ -59,7 +59,7 @@ export default function About() {
               Yasmeen Mahmoud
             </Title>
 
-            <SharedTitle title={"FullStack Developer "} />
+            <SharedTitle title={"FrontEnd Developer "} />
 
             <motion.p
               className="text-lg leading-relaxed  px-3"

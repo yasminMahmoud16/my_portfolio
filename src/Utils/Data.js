@@ -1,4 +1,6 @@
 import portfolio from "../assets/Images/portfolio.png"
+import epeco from "../assets/Images/epeco.png"
+import gets from "../assets/Images/eviroGets.png"
 import goldenStitchBg from "../assets/Images/goldenStitchBg.png"
 import landingSurveybG from "../assets/Images/landingSurveybG.png"
 import balanceFullBg from "../assets/Images/balanceFullBg.png"
@@ -36,6 +38,24 @@ import html from "../assets/Images/html-5-svgrepo-com.svg"
 
 
 export const projects = [
+    {
+        id: 13,
+        name: "EnviroGets - إنفايروجيتس",
+        link: "https://www.gets.sa/",
+        gitHubLink: "",
+        behanceLink: "",
+        image: gets,
+        tech: ["React", "Tailwind CSS", "Flowbite" ,"i18next"]
+    },
+    {
+        id: 12,
+        name: "epeco - مكتب نقاء البيئة",
+        link: "https://www.epeco.sa/",
+        gitHubLink: "",
+        behanceLink: "",
+        image: epeco,
+        tech: ["React", "Tailwind CSS", "Flowbite" ,"i18next"]
+    },
     {
         id: 11,
         name: "personal portfolio",
